@@ -1,0 +1,51 @@
+.wordle-container {
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px; /* Add gap between grid boxes in a row */
+}
+
+.grid-box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  max-width: 100%; /* Set a maximum width for the content */
+  max-height: 100%; /* Set a maximum height for the content */
+  overflow: hidden;
+}
+
+.letter-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.button {
+  font-size: 18px;
+  margin: 2px;
+}
+.button:hover {
+  cursor: pointer;
+}
+.incorrect {
+  background-color: lightgray;
+}
+.misplaced {
+  background-color: orange;
+}
+.correct {
+  background-color: lightgreen;
+}
