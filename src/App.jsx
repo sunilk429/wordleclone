@@ -115,6 +115,7 @@ const App = () => {
     setFeedback(initialGrid);
     setGrid(initialGrid);
     setShowModal(false);
+    setLetterFeedback({});
   };
 
   const getFeedbackClass = (feedbackValue) => {
